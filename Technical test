@@ -1,0 +1,21 @@
+package Technical test;
+
+import java.util.Scanner;
+
+public class TimeDuration {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Saisissez le nombre de secondes: ");
+		int i = sc.nextInt();
+		int h,m,s;
+		while (i < 0){
+			System.out.println("Veulliez saisir un nombre positif: ");
+			i = sc.nextInt();
+		}
+		m=i/60;
+		s=i%60;
+		h=m/6060;
+		System.out.println(h + "h " + m + "m " + s + "s");
+	}
+}
